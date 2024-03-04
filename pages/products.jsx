@@ -10,7 +10,7 @@ export default function Products() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:3030/api/product");
+        const res = await axios.get("https://api-shop-murex.vercel.app/api/product");
         setData(res.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);

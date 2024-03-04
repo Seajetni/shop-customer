@@ -15,7 +15,7 @@ export default function Product() {
       return;
     } else {
       axios
-        .get("http://localhost:3030/api/product/" + id)
+        .get("https://api-shop-murex.vercel.app/api/product/" + id)
         .then((res) => {
           setProductInfo(res.data.data);
         })
