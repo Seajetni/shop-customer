@@ -31,6 +31,7 @@ export default function Featured() {
             <header>
               <h2 className="text-xl font-bold text-gray-900 sm:text-3xl"></h2>
               <p className="mt-4 text-gray-500">
+                
               มีสินค้าให้เลือกหลากหลายรูปแบบ หลายไซส์  หลายขนาด และสามารถสั่งทำไซส์ตามต้องการของลูกค้าได้  มีบริการทำสีราคาย่อมเยาว์   คุยรายละเอียดทาง Facebook - Line !
               </p>
             </header>

@@ -24,7 +24,7 @@ export default function Product() {
         });
     }
   }, [id]);
-  console.log(productInfo);
+
 
   if (!productInfo) {
     return (
@@ -36,7 +36,7 @@ export default function Product() {
 
   return (
     <Layout>
-      <div className=" w-screen h-screen p-4 xl:flex xl:h-1/2">
+      <div className=" w-screen h-full p-4 xl:flex xl:h-1/2">
         <div className="flex justify-center pt-5 pb-3">
           <Image
             src={productInfo.img}
@@ -70,7 +70,7 @@ export default function Product() {
               </dd>
             </div>
 
-            <div className="grid grid-cols-1 gap-1 py-3 sm:grid-cols-4 sm:gap-4">
+            <div className="grid grid-cols-1  gap-1 py-3 sm:grid-cols-4 sm:gap-4">
               <dt className="font-medium text-gray-900 text-xl">
                 ติดต่อซื้อได้ที่นี่
               </dt>
@@ -201,7 +201,7 @@ export default function Product() {
               </Link>
               <Link
                 href="tel:0961678500"
-                class="flex break-inside bg-white text-black border-2 border-black rounded-3xl px-6 py-3 mb-4 w-full dark:bg-rose-400 dark:text-white"
+                class="flex break-inside bg-white text-black border-2 border-black rounded-3xl px-6 py-3 mb-4 w-full dark:bg-rose-300 dark:text-white"
               >
                 <div class="m-auto">
                   <div class="flex items-center justify-start flex-1 space-x-4 ">

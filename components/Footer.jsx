@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-gray-100">
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
-          <Image src="/logo.png" width={100} height={100} />
+          <Image src="/logo.png" alt="Logo" width='100' height='100' />
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
