@@ -10,7 +10,7 @@ export default function Featured() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("https://api-shop-murex.vercel.app/api/product");
+        const res = await axios.get("/api/getData");
         setData(res.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -31,8 +31,7 @@ export default function Featured() {
             <header>
               <h2 className="text-xl font-bold text-gray-900 sm:text-3xl"></h2>
               <p className="mt-4 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                rerum quam amet provident nulla error!
+              มีสินค้าให้เลือกหลากหลายรูปแบบ หลายไซส์  หลายขนาด และสามารถสั่งทำไซส์ตามต้องการของลูกค้าได้  มีบริการทำสีราคาย่อมเยาว์   คุยรายละเอียดทาง Facebook - Line !
               </p>
             </header>
 

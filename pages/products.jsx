@@ -10,7 +10,7 @@ export default function Products() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("https://api-shop-murex.vercel.app/api/product");
+        const res = await axios.get("/api/getData");
         setData(res.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -29,13 +29,11 @@ export default function Products() {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header className="text-center">
             <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-              Product Collection
+              สินค้า ทั้งหมด
             </h2>
 
             <p className="mx-auto mt-4 max-w-md text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-              praesentium cumque iure dicta incidunt est ipsam, officia dolor
-              fugit natus?
+            สินค้าร้านเราผลิต และจำหน่ายเองมานานกว่า 13 ปี เป็นเจ้าแรกๆในนครนายก คัดเลือกวัสดุทุกชนิด ก่อนจะสั่งผลิต เป็นงานปั้นมือ ฝีมือคนไทย จึงมีความทนทาน ผิวสวย เก็บงานก่อนส่งต่อให้ลูกค้าทุกใบ
             </p>
           </header>
 
@@ -49,7 +47,8 @@ export default function Products() {
                         src={item.img}
                         alt=""
                         width={100}
-                        className="h-[350px] w-full  transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                        height={10}
+                        className="h-[350px] w-full  transition duration-500 group-hover:scale-105 "
                       />
 
                       <div className="relative  pt-2 px-4 pb-2" >
